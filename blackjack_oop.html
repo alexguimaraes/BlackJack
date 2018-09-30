@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/blackjack.css" type="text/css">
+    <script src="js/blackjack_object.js"></script>
+    <script src="js/blackjack_manager.js"></script>
+    <title>BlackJack</title>
+  </head>
+
+  <body>
+    <header>
+      <!--<h1>BLACKJACK</h1>-->
+        <img id = "logo" src = "imgs/logo.png">
+    </header>
+
+
+    <section id="game">
+      <h1 id="dealer">Dealer</h1><section id = "1"></section>
+      <h1 id="player">Player</h1><section id = "2"></section>
+     <button id="card" type="button" onclick="player_new_card()">Card</button>
+     <button id="stand" type="button" onclick="dealer_finish()">Stand</button>
+     <button id="new_game" type="button" onclick="new_game()" disabled>New Game</button>
+   </section>
+   <!--
+   <section id="sec_debug">
+     <h1>Debug</h1>
+     <p id="debug"></p>
+   </section>
+   -->
+    <section>
+      <script> window.onload = new_game();</script>
+    </section>
+    <footer></footer>
+  </body>
+
+</html> 
